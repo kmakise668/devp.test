@@ -1,0 +1,14 @@
+{
+  "entrypoints": {
+    "main": {
+      "js": [
+        "/local/build/main.d46f445d.js"
+      ]
+    },
+    "global": {
+      "css": [
+        "/local/build/global.d46f445d.css"
+      ]
+    }
+  }
+}
