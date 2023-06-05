@@ -1,20 +1,20 @@
-$font-family: Verdana,
-Arial,
-Helverica,
-sans-serif;
-$font-size-xs: 10px;
-$font-size-sm: 12px;
-$font-size-md: 16px;
-$font-size-lg: 21px;
-$font-size-xl: 25px;
-$font-size-title: 28px;
-$screen-xs: 0;
-$screen-sm: 480px;
-$screen-md: 768px;
-$screen-lg: 992px;
-$screen-xl: 1280px;
-$color: #2769ec;
-$color-dark: #4381fc;
+// $font-family: Verdana,
+// Arial,
+// Helverica,
+// sans-serif;
+// $font-size-xs: 10px;
+// $font-size-sm: 12px;
+// $font-size-md: 16px;
+// $font-size-lg: 21px;
+// $font-size-xl: 25px;
+// $font-size-title: 28px;
+// $screen-xs: 0;
+// $screen-sm: 480px;
+// $screen-md: 768px;
+// $screen-lg: 992px;
+// $screen-xl: 1280px;
+$color: #5284F7;
+$color-dark: #3072D0;
 $orange: #e64b0f;
 $orange-dark: #eb6b39;
 $red: #e60f2d;
@@ -22,6 +22,7 @@ $red-dark: #f74058;
 $green: #09c256;
 $green-dark: #12d864;
 :root {
+    --font: 'Gilroy', sans-serif;
     --bg: #fff;
     --field-bg: var(--bg);
     --bg-opacity: rgba(255, 255, 255, 0.8);
@@ -40,9 +41,9 @@ $green-dark: #12d864;
     --logo: 8rem;
     --blur: 80px;
     --switch-bg: var(--bg);
-    --top-header: 8rem;
+    --top-header: 4rem;
     --bottom-header: 6rem;
-    --fz: 1.5rem;
+    --fz: 1.45rem;
     --fz-smaller: calc(var(--fz) * 0.9);
     --fz-small: calc(var(--fz) * 0.8);
     --fz-larger: calc(var(--fz) * 1.1);
@@ -223,4 +224,8 @@ $green-dark: #12d864;
      :root {
         --rem: 10px;
     }
+}
+
+.counter-check {
+    background-color: var(--bg-opacity);
 }

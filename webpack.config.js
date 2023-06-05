@@ -17,10 +17,14 @@ Encore
     })
     .enableSourceMaps(!Encore.isProduction())
     .configureFilenames({
-        js: '[name].[hash:8].js',
-        css: '[name].[hash:8].css'
+        js: '[name].[chunkhash:8].js',
+        css: '[name].[contenthash:8].css'
     })
-    .enableVersioning();
+    .enableVersioning()
+    .copyFiles({
+        from: './local/assets/fonts',
+        to: 'fonts/[path][name].[ext]'
+    });
 
 var config = Encore.getWebpackConfig();
 config.externals = {

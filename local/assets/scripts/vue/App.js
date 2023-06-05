@@ -1,19 +1,8 @@
-const app = BX.Vue3.BitrixVue.createApp({
-    data() {
-        return {
-            counter: 0
-        }
-    },
-    mounted() {
-        setInterval(() => {
-            this.counter++
-        }, 1000)
-    },
-    // language=Vue
-    template: `
-        Counter: {{ counter }}
-    `
-}).mount('#app');
+import Vue from 'vue'
+import App from './App.vue'
 
+Vue.config.productionTip = false
 
-// import { HelloWorld } from './/src/components/HelloWorld';
+new Vue({
+    render: h => h(App)
+}).$mount('#app')
