@@ -2,6 +2,7 @@
     &__inner {
         .header__top {
             align-items: center;
+            padding: 0 var(--section-p);
             border-bottom: 1px solid var(--border);
             display: flex;
             height: var(--top-header);
@@ -41,13 +42,38 @@
         .header__bottom {
             align-items: center;
             display: flex;
-            height: var(--header-bottom);
+            height: var(--bottom-header);
+            padding: 0 var(--section-p);
+            border-bottom: 1px solid var(--border);
             .header__contacts {
                 display: flex;
-                flex-direction: column;
-                .time {
-                    color: var(--text-grey);
-                    font-size: var(--fz-smaller);
+                align-items: flex-end;
+                line-height: 1.4;
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    .time {
+                        color: var(--text-grey);
+                        font-size: var(--fz-smaller);
+                    }
+                    a {
+                        font-size: 2rem;
+                        font-weight: 500;
+                        color: var(--text);
+                        letter-spacing: 0.1rem;
+                    }
+                }
+                .call-btn {
+                    text-decoration: underline dashed;
+                    color: var(--theme);
+                    cursor: pointer;
+                    transition: 0.3s;
+                    &:hover {
+                        color: var(--theme-dark);
+                    }
+                }
+                &>*:last-child {
+                    margin-left: var(--field-large);
                 }
             }
         }

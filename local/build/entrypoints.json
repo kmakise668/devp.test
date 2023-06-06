@@ -2,12 +2,12 @@
   "entrypoints": {
     "main": {
       "js": [
-        "/local/build/main.1f7bac77.js"
+        "/local/build/main.643335aa.js"
       ]
     },
     "global": {
       "css": [
-        "/local/build/global.de17980e.css"
+        "/local/build/global.7edb5123.css"
       ]
     }
   }

@@ -8,7 +8,9 @@ Encore
     // .enableSingleRuntimeChunk()  // если включить, не работает js почему-то
     .addEntry('main', './local/assets/scripts/main.js')
     .addStyleEntry('global', './local/assets/styles/global.scss')
-    .enableVueLoader()
+    .enableVueLoader(() => {}, {
+        useJsx: true
+    })
     .enableSassLoader(() => {}, { resolveUrlLoader: false })
     .enablePostCssLoader()
     .autoProvideVariables({
@@ -21,10 +23,10 @@ Encore
         css: '[name].[contenthash:8].css'
     })
     .enableVersioning()
-    .copyFiles({
-        from: './local/assets/fonts',
-        to: 'fonts/[path][name].[ext]'
-    });
+    // .copyFiles({
+    //     from: './local/assets/fonts',
+    //     to: 'fonts/[path][name].[ext]'
+    // });
 
 var config = Encore.getWebpackConfig();
 config.externals = {

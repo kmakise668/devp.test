@@ -1,8 +1,8 @@
 <template>
     <div class="container">
+      <!-- <button-counter />
       <button-counter />
-      <button-counter />
-      <button-counter />
+      <button-counter /> -->
     </div>
   </template>
 
@@ -17,9 +17,11 @@ import ButtonCounter from './src/components/ButtonCounter.vue'
     name: 'App',
     components: {
       // Success,
-      //   HelloWorld
+      // HelloWorld
       ButtonCounter
     },
   }
 
 </script>
+
+
